@@ -1,0 +1,138 @@
+
+.nav-form {
+      -fx-background-color:linear-gradient(to bottom right,#272b3f, #256b51);     
+    
+}
+.nav-button{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-font-family:"Arial";
+    -fx-font-size:14px;
+    -fx-text-fill:#fff;
+    -fx-font-weight: bold;
+}
+.logout:hover{
+    -fx-background-color:#18a383; 
+    -fx-cursor:hand;
+}
+.text-semi-left{
+    
+    -fx-text-fill:#fff;
+    -fx-font-family:"Arial";
+    -fx-cursor:hand;
+    -fx-font-style:bold;
+}
+.button-semi-left:hover,.active {
+    -fx-background-color:#ffffff55;
+}
+.anchorpane-center{
+    -fx-background-color:#fff; 
+    -fx-background-radius:8px;
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.5),6,0,0,0); 
+}
+
+.button-tabel-menu{
+    -fx-background-color:c9c9c9; 
+    -fx-background-radius:5px;
+}
+.button-inside-menu{
+    -fx-font-style:bold;
+    -fx-font-family:"Arial";
+    -fx-cursor:hand;
+    -fx-background-radius:5px;
+}
+
+.button-inside-menu:hover,.active1{
+     -fx-background-color:#18a383;
+     -fx-text-fill: #fff;
+}
+.button-clear-orders{
+    -fx-background-color:#EF6D52;
+    -fx-background-radius:10px;
+    -fx-font-family:"Arial";
+    -fx-font-style:bold;
+    -fx-font-size:14px;
+}
+.button-clear-orders:hover{
+    -fx-background-color:#622eff;
+    -fx-text-fill: #fff;
+    -fx-cursor:hand;
+    -fx-font-family:"Arial";
+    -fx-font-style:bold;
+    -fx-font-size:14px;
+}
+.table-view{
+    -fx-background-color:transparent;
+    -fx-border-color:linear-gradient(to bottom right,#272b3f, #256b51);
+    -fx-border-radius:8px;
+    -fx-padding:0px;
+}
+.table-view .table-column{
+    -fx-alignment:CENTER;
+}
+.table-view .column-header-background{
+    -fx-background-color:linear-gradient(to bottom right,#272b3f, #256b51);
+    -fx-background-insets:0 0 0 0;
+    -fx-background-radius:8px 8px 0px 0px;
+}
+.table-view .column-header, .filter{
+    -fx-background-color:transparent;
+    -fx-size:40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+    -fx-font-family:"Arial";
+}
+ .tab{
+    -fx-background-color:linear-gradient(to bottom right,#272b3f, #256b51);
+    -fx-background-insets:0 0 0 0;
+    -fx-background-radius:8px 8px 0px 0px;
+}
+ .tab .tab-label{
+    -fx-text-fill:#fff;
+    -fx-font-size:"Arial";
+    -fx-alignment:CENTER;
+    -fx-font-style:bold;
+    -fx-font-size:14px;
+    -fx-cursor:hand;
+}
+.textmenu{
+    -fx-font-family:"Arial";
+    -fx-font-size:15px;
+    -fx-font-weight: bold;
+}
+.buttonmenu{
+    -fx-background-color:#622eff;
+    -fx-text-fill:#fff;
+    -fx-font-family:"Arial";
+    -fx-font-size:15px;
+    -fx-font-weight: bold;
+    -fx-background-radius:10px;
+}
+.buttonmenu:hover{
+    -fx-background-color:linear-gradient(to bottom right,#272b3f, #256b51);
+    -fx-font-family:"Arial";
+    -fx-font-size:15px;
+    -fx-font-weight: bold;
+    -fx-background-radius:10px;
+    -fx-cursor:hand;
+}
+
+.buttonBills{
+    -fx-background-color:#EF6D52;
+    -fx-background-radius:10px;
+    -fx-font-family:"Arial";
+    -fx-font-Weight:bold;
+    -fx-font-size:20px;
+}
+.buttonBills:hover{
+    -fx-background-color:#622eff;
+    -fx-text-fill: #fff;
+    -fx-cursor:hand;
+    -fx-font-family:"Arial";
+    -fx-font-Weight:bold;
+    -fx-font-size:20px;
+}
+

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.restaurant.SupliersController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="600.0" prefWidth="200.0" styleClass="anhorPane-left" stylesheets="@supliers.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="123.0" fitWidth="164.0" layoutX="30.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="45.0">
+                           <image>
+                              <Image url="@image/icons8-supplies-100.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="60.0" layoutY="166.0" styleClass="text_main-left" stylesheets="@supliers.css" text="Welcome" />
+                        <Label layoutX="37.0" layoutY="196.0" styleClass="text_main-left" stylesheets="@supliers.css" text="Zuwar Restaurant" />
+                        <Line endX="100.0" fill="#32c9ab" layoutX="103.0" layoutY="233.0" startX="-100.0" stroke="WHITE" />
+                        <Button fx:id="warehouseButtonSupliers" layoutX="16.0" layoutY="253.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="33.0" prefWidth="170.0" stylesheets="@supliers.css" text="Warehouse">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8-warehouse-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="nav-button" />
+                              <String fx:value="button-semi-left" />
+                              <String fx:value="active" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="supliersButtonSupliers" layoutX="18.0" layoutY="308.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="33.0" prefWidth="170.0" stylesheets="@supliers.css" text="Suppliers" AnchorPane.topAnchor="308.0">
+                           <graphic>
+                              <ImageView fitHeight="33.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8-in-transit-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="nav-button" />
+                              <String fx:value="button-semi-left" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="ordersButtonSupliers" layoutX="14.0" layoutY="365.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="33.0" prefWidth="170.0" stylesheets="@supliers.css" text="Orders">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8-logistics-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="nav-button" />
+                              <String fx:value="button-semi-left" />
+                           </styleClass>
+                        </Button>
+                        <Button layoutX="20.0" layoutY="553.0" mnemonicParsing="false" styleClass="logout1" stylesheets="@supliers.css">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8-log-out-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label layoutX="84.0" layoutY="562.0" styleClass="nav-button" stylesheets="@supliers.css" text="Log out" />
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="warehouseForm" layoutX="6.0" prefHeight="600.0" prefWidth="796.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="95.0" layoutY="130.0" prefHeight="316.0" prefWidth="531.0" stylesheets="@supliers.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="5.0">
+                                 <children>
+                                    <TableView layoutX="125.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                      <columns>
+                                        <TableColumn prefWidth="96.0" text="Product_ID" />
+                                        <TableColumn prefWidth="98.0" text="Name" />
+                                          <TableColumn prefWidth="92.0" text="Quantity" />
+                                          <TableColumn prefWidth="134.0" text="Price" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="anchorpane-center" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                              <AnchorPane layoutY="341.0" prefHeight="259.0" prefWidth="534.0" stylesheets="@supliers.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="350.0">
+                                 <styleClass>
+                                    <String fx:value="anchorpane-center" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <ImageView fitHeight="264.0" fitWidth="424.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/product.png" />
+                                       </image>
+                                       <effect>
+                                          <BoxBlur iterations="2" width="0.0" />
+                                       </effect>
+                                    </ImageView>
+                                    <Label layoutX="169.0" layoutY="54.0" styleClass="text-image" text="يجب الانتباه جيدًا" textFill="#0cedd1" />
+                                    <Label layoutX="40.0" layoutY="105.0" styleClass="text-image" stylesheets="@waiter.css" text="لطرق التخزين الصحيحة للحفاظ على جودة البضائع" />
+                                    <Label layoutX="60.0" layoutY="153.0" styleClass="text-image" stylesheets="@waiter.css" text="وتجنب أي تلف أو خسائر قد تؤثر على العمل" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="550.0" layoutY="144.0" prefHeight="580.0" prefWidth="326.0" stylesheets="@supliers.css" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <children>
+                                    <TextField layoutX="39.0" layoutY="62.0" AnchorPane.leftAnchor="70.0" />
+                                    <Label layoutX="39.0" layoutY="36.0" styleClass="text-center" stylesheets="@supliers.css" text="Product_ID:" AnchorPane.leftAnchor="70.0" />
+                                    <TextField layoutX="42.0" layoutY="139.0" AnchorPane.leftAnchor="70.0" />
+                                    <Label layoutX="42.0" layoutY="110.0" styleClass="text-center" stylesheets="@supliers.css" text="Name:" AnchorPane.leftAnchor="70.0" />
+                                    <TextField layoutX="3.0" layoutY="211.0" AnchorPane.leftAnchor="70.0" />
+                                    <Label layoutX="42.0" layoutY="182.0" styleClass="text-center" stylesheets="@supliers.css" text="Quantity:" AnchorPane.leftAnchor="70.0" />
+                                    <TextField layoutX="-3.0" layoutY="275.0" AnchorPane.leftAnchor="70.0" />
+                                    <Label layoutX="41.0" layoutY="250.0" styleClass="text-center" stylesheets="@supliers.css" text="Price:" AnchorPane.leftAnchor="70.0" />
+                                    <Button layoutX="58.0" layoutY="336.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Clear" AnchorPane.leftAnchor="58.0" />
+                                    <Button layoutX="176.0" layoutY="336.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Update" />
+                                    <Button layoutX="58.0" layoutY="401.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Search" AnchorPane.leftAnchor="58.0" />
+                                    <Button layoutX="176.0" layoutY="401.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Insert" />
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="anchorpane-center" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="supliersForm" layoutX="175.0" layoutY="166.0" prefHeight="600.0" prefWidth="796.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="-76.0" layoutY="14.0" prefHeight="316.0" prefWidth="732.0" stylesheets="@supliers.css" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <children>
+                                    <TableView layoutX="125.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                       <columns>
+                                          <TableColumn prefWidth="75.0" text="Ssn" />
+                                          <TableColumn prefWidth="105.0" text="First_Name" />
+                                          <TableColumn prefWidth="105.0" text="Last_Name" />
+                                          <TableColumn prefWidth="170.0" text="Category" />
+                                          <TableColumn prefWidth="134.0" text="Phone_Number" />
+                                          <TableColumn prefWidth="166.0" text="Email" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="anchorpane-center" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                              <AnchorPane layoutX="198.0" layoutY="340.0" prefHeight="250.0" prefWidth="776.0" stylesheets="@supliers.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="340.0">
+                                 <styleClass>
+                                    <String fx:value="anchorpane-center" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <Label layoutX="56.0" layoutY="43.0" styleClass="text-center" stylesheets="@supliers.css" text="Ssn:" />
+                                    <TextField layoutX="102.0" layoutY="40.0" />
+                                    <TextField layoutX="102.0" layoutY="101.0" />
+                                    <Label layoutX="19.0" layoutY="95.0" styleClass="text-center" stylesheets="@supliers.css" text="First_Name:" />
+                                    <TextField layoutX="102.0" layoutY="168.0" />
+                                    <Label layoutX="19.0" layoutY="172.0" styleClass="text-center" stylesheets="@supliers.css" text="Last_Name:" />
+                                    <TextField layoutX="403.0" layoutY="41.0" />
+                                    <Label layoutX="313.0" layoutY="43.0" styleClass="text-center" stylesheets="@supliers.css" text="Category:" />
+                                    <TextField layoutX="403.0" layoutY="105.0" />
+                                    <Label layoutX="282.0" layoutY="108.0" styleClass="text-center" stylesheets="@supliers.css" text="Phone_Number:" />
+                                    <TextField layoutX="403.0" layoutY="170.0" />
+                                    <Label layoutX="327.0" layoutY="173.0" styleClass="text-center" stylesheets="@supliers.css" text="Email" />
+                                    <Button layoutX="623.0" layoutY="79.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Clear" />
+                                    <Button layoutX="623.0" layoutY="130.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Update" />
+                                    <Button layoutX="623.0" layoutY="183.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Search" />
+                                    <Button layoutX="623.0" layoutY="24.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Insert" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="ordersForm" layoutX="239.0" layoutY="121.0" prefHeight="600.0" prefWidth="796.0" stylesheets="@supliers.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="32.0" prefHeight="330.0" prefWidth="519.0" stylesheets="@supliers.css" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="anchorpane-center" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView prefHeight="321.0" prefWidth="514.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+                                       <columns>
+                                          <TableColumn prefWidth="84.0" text="Order_ID" />
+                                          <TableColumn prefWidth="140.0" text="Date" />
+                                          <TableColumn prefWidth="112.0" text="Total_Amount" />
+                                          <TableColumn prefWidth="152.0" text="Payment_Type" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="543.0" layoutY="16.0" prefHeight="580.0" prefWidth="247.0" stylesheets="@supliers.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <children>
+                                    <TextField layoutX="39.0" layoutY="62.0" AnchorPane.leftAnchor="42.0" />
+                                    <Label layoutX="39.0" layoutY="36.0" styleClass="text-center" stylesheets="@supliers.css" text="Order_ID:" AnchorPane.leftAnchor="42.0" />
+                                    <TextField layoutX="42.0" layoutY="139.0" AnchorPane.leftAnchor="42.0" />
+                                    <Label layoutX="42.0" layoutY="110.0" styleClass="text-center" stylesheets="@supliers.css" text="Date:" AnchorPane.leftAnchor="42.0" />
+                                    <TextField layoutX="3.0" layoutY="211.0" AnchorPane.leftAnchor="42.0" />
+                                    <Label layoutX="42.0" layoutY="182.0" styleClass="text-center" stylesheets="@supliers.css" text="Total_Amount" />
+                                    <TextField layoutX="-3.0" layoutY="275.0" AnchorPane.leftAnchor="42.0" />
+                                    <Label layoutX="41.0" layoutY="250.0" styleClass="text-center" stylesheets="@supliers.css" text="Payment_Type" />
+                                    <Button layoutX="17.0" layoutY="336.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Clear" AnchorPane.leftAnchor="22.0" />
+                                    <Button layoutX="130.0" layoutY="336.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Update" />
+                                    <Button layoutX="22.0" layoutY="401.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Search" AnchorPane.leftAnchor="22.0" />
+                                    <Button layoutX="130.0" layoutY="401.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" styleClass="button-center" stylesheets="@supliers.css" text="Insert" />
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="anchorpane-center" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                              <AnchorPane layoutX="188.0" layoutY="346.0" prefHeight="242.0" prefWidth="519.0" stylesheets="@supliers.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="anchorpane-center" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <ImageView fitHeight="230.0" fitWidth="441.0" layoutX="58.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="45.157470703125" AnchorPane.topAnchor="6.0">
+                                       <image>
+                                          <Image url="@image/imageOrders.png" />
+                                       </image>
+                                       <effect>
+                                          <BoxBlur />
+                                       </effect></ImageView>
+                                    <Label layoutX="153.0" layoutY="95.0" styleClass="text-image" text="راجع الطلبات بدقة لتجنب الأخطاء" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

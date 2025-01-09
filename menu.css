@@ -1,0 +1,24 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.anchorpane-center{
+    -fx-background-color:#fff; 
+    -fx-background-radius:8px;
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.5),6,0,0,0); 
+}
+
+.button-inside-menu{
+    -fx-font-style:bold;
+    -fx-background-color:linear-gradient(to bottom right, #1CB5E0, #000851);
+    -fx-cursor:hand;
+    -fx-background-radius:5px;
+    -fx-text-fill: #fff;
+}
+
+.button-inside-menu:hover,.active1{
+     -fx-background-color:#18a383;
+     -fx-text-fill: #fff;
+}

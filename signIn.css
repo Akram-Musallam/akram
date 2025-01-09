@@ -1,0 +1,40 @@
+.text1{
+     -fx-font-family:"Arial Arabic";
+    -fx-font-size:26px; 
+    -fx-font-weight: bold;
+}
+.button-sign-in{
+    -fx-font-weight: bold;
+    -fx-font-family:"console";
+    -fx-font-size:16px;
+    -fx-background-radius:6px;
+    -fx-border: 2px solid;
+    -fx-background-color:linear-gradient(to bottom, #000000, #6A4E42);
+    -fx-text-fill:#fff;  
+}
+.button-sign-in:hover{
+    -fx-background-color: linear-gradient(to bottom, #000000, #4A3623);
+    -fx-cursor:hand;
+}
+.anchorpane{
+    -fx-background-color:#fff;
+}
+.textfield1{
+    -fx-background-radius:6px;
+}
+
+.button1:hover{
+    -fx-background-color:linear-gradient(to bottom, #2C2C2C, #8C6A5B);
+}
+.textCustomer{
+    -fx-font-family:"console";
+    -fx-text-fill:#ff0000;
+    -fx-background-color:transparent;
+    
+}
+
+.textCustomer:hover{
+    -fx-cursor:hand;
+    -fx-text-fill:#2700ff;
+    -fx-background-color:transparent;
+}

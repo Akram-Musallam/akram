@@ -1,0 +1,85 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.text_main-left{
+    -fx-font-family:"Arial";
+    -fx-font-size:14px; 
+    -fx-text-fill:#fff;
+    -fx-font-weight: bold;
+}
+.nav-button{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-font-family:"Arial";
+    -fx-font-size:14px;
+    -fx-text-fill:#fff;
+    -fx-font-weight: bold;
+}
+.anhorPane-left{
+   -fx-background-color: linear-gradient(to bottom right, #1CB5E0, #000851);
+}
+.button-semi-left:hover,.active {
+    -fx-background-color:#ffffff55;
+    -fx-cursor:hand;
+}
+.logout1{
+    -fx-border-radius:5px;
+    
+    -fx-background-radius:10px;
+    
+}
+.logout1:hover{
+    -fx-background-color:#7ea7ff;
+    -fx-cursor:hand;
+}
+.anchorpane-center{
+    -fx-background-color:#fff; 
+    -fx-background-radius:8px;
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.5),6,0,0,0); 
+}
+.table-view{
+    -fx-background-color:transparent;
+    -fx-border-color:linear-gradient(to bottom right, #1CB5E0, #000851);
+    -fx-border-radius:8px;
+    -fx-padding:0px;
+}
+.table-view .table-column{
+    -fx-alignment:CENTER;
+}
+.table-view .column-header-background{
+    -fx-background-color:linear-gradient(to bottom right, #1CB5E0, #000851);
+    -fx-background-insets:0 0 0 0;
+    -fx-background-radius:8px 8px 0px 0px;
+}
+.table-view .column-header, .filter{
+    -fx-background-color:transparent;
+    -fx-size:40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+    -fx-font-size:"Arial";
+}
+.text-center{
+    -fx-font-size:14px; 
+    -fx-font-weight: bold;
+}
+.button-center{
+    -fx-font-size:13px; 
+    -fx-background-color:#ff2d2d;
+    -fx-font-weight: bold;
+}
+.button-center:hover{
+    -fx-background-color:linear-gradient(to bottom right, #1CB5E0, #000851);
+    -fx-text-fill:#fff;
+    -fx-cursor:hand;
+}
+
+.text-image{
+    -fx-font-size:22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0cedd1;
+    -fx-font-family:"Arial";
+}

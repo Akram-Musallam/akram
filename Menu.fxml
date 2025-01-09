@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.restaurant.MenuController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@menu.css">
+         <children>
+            <AnchorPane layoutX="227.0" prefHeight="133.0" prefWidth="694.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="501.0" AnchorPane.topAnchor="5.0">
+               <styleClass>
+                  <String fx:value="anchorpane-center" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <Label layoutX="14.0" layoutY="58.0" text="Meals">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="86.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/pizza.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="99.0" fitWidth="136.0" layoutX="239.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/burger.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="106.0" fitWidth="136.0" layoutX="385.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/chiken.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="106.0" fitWidth="136.0" layoutX="539.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/fish.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="136.0" layoutY="107.0" mnemonicParsing="false" onAction="#ButtonPizza" styleClass="button-inside-menu" text="بيتزا" />
+                  <Button layoutX="289.0" layoutY="105.0" mnemonicParsing="false" onAction="#ButtonBurger" styleClass="button-inside-menu" text="برغر" />
+                  <Button layoutX="419.0" layoutY="105.0" mnemonicParsing="false" onAction="#ButtonChicken" styleClass="button-inside-menu" text="جاج مشوي" />
+                  <Button layoutX="561.0" layoutY="105.0" mnemonicParsing="false" onAction="#ButtonFish" prefHeight="25.0" prefWidth="81.0" styleClass="button-inside-menu" text="سمك مشوي" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="145.0" prefHeight="144.0" prefWidth="682.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="501.0" AnchorPane.topAnchor="145.0">
+               <styleClass>
+                  <String fx:value="anchorpane-center" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <Label layoutX="7.0" layoutY="61.0" text="Appetizers">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="96.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/hummas.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="239.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/smosa.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="383.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/bb.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="532.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/mlfof.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="146.0" layoutY="105.0" mnemonicParsing="false" onAction="#ButtonHummus" styleClass="button-inside-menu" text="حمص" />
+                  <Button layoutX="284.0" layoutY="105.0" mnemonicParsing="false" onAction="#ButtonSamosa" styleClass="button-inside-menu" text="سمبوسة" />
+                  <Button layoutX="421.0" layoutY="105.0" mnemonicParsing="false" onAction="#ButtonPotatoes" styleClass="button-inside-menu" text="بطاطا" />
+                  <Button layoutX="558.0" layoutY="105.0" mnemonicParsing="false" onAction="#ButtonSalad" styleClass="button-inside-menu" text="سطلة ملفوف" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="300.0" prefHeight="144.0" prefWidth="682.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="501.0">
+               <styleClass>
+                  <String fx:value="anchorpane-center" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <Label layoutX="7.0" layoutY="56.0" text="Drinks">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="84.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/cola.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="100.0" layoutY="94.0" mnemonicParsing="false" onAction="#ButtonCola" styleClass="button-inside-menu" text="كولا" />
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="211.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/sprite.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="203.0" layoutY="94.0" mnemonicParsing="false" onAction="#ButtonSprite" styleClass="button-inside-menu" text="سبرايت" />
+                  <Button layoutX="325.0" layoutY="94.0" mnemonicParsing="false" onAction="#ButtonLemonade" styleClass="button-inside-menu" text="عصير ليمون" />
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="318.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/limon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="427.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/frowla.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="449.0" layoutY="94.0" mnemonicParsing="false" onAction="#ButtonStrawberry" styleClass="button-inside-menu" text="عصير قراولة" />
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="579.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/tea.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="590.0" layoutY="107.0" mnemonicParsing="false" onAction="#ButtonTea" styleClass="button-inside-menu" text="شاي" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="415.0" layoutY="400.0" prefHeight="144.0" prefWidth="682.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="501.0">
+               <styleClass>
+                  <String fx:value="anchorpane-center" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <Label layoutX="14.0" layoutY="53.0" text="Sweets">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="90.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/knafa.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="242.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/bglau.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="385.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/namora.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="91.0" fitWidth="136.0" layoutX="531.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/kataef.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="129.0" layoutY="93.0" mnemonicParsing="false" onAction="#ButtonKunafa" styleClass="button-inside-menu" text="كنافة" />
+                  <Button layoutX="287.0" layoutY="93.0" mnemonicParsing="false" onAction="#ButtonBaklava" styleClass="button-inside-menu" text="بقلاوة" />
+                  <Button layoutX="431.0" layoutY="93.0" mnemonicParsing="false" onAction="#ButtonNamoura" styleClass="button-inside-menu" text="نمورة" />
+                  <Button layoutX="573.0" layoutY="93.0" mnemonicParsing="false" onAction="#ButtonQatayef" styleClass="button-inside-menu" text="قطايف" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="714.0" layoutY="262.0" prefHeight="590.0" prefWidth="481.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="714.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <styleClass>
+                  <String fx:value="anchorpane-center" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <TextField fx:id="textFieldName" layoutX="174.0" layoutY="393.0" prefHeight="25.0" prefWidth="206.0" />
+                  <TextField fx:id="textFieldPrice" layoutX="178.0" layoutY="437.0" prefHeight="25.0" prefWidth="206.0" />
+                  <Label layoutX="82.0" layoutY="440.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="79.0" layoutY="396.0" text="Name">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Button fx:id="searchButton" layoutX="290.0" layoutY="501.0" mnemonicParsing="false" onAction="#searchButton" prefHeight="33.0" prefWidth="112.0" styleClass="button-inside-menu" text="search" />
+                  <Button fx:id="deleteButton" layoutX="174.0" layoutY="501.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="33.0" prefWidth="101.0" styleClass="button-inside-menu" text="delete" />
+                  <TableView fx:id="tableView" prefHeight="343.0" prefWidth="481.0" stylesheets="@stylesecondry.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="dishesName" prefWidth="102.0" text="Name" />
+                        <TableColumn fx:id="dishesPrice" minWidth="0.0" prefWidth="81.0" text="Price" />
+                        <TableColumn fx:id="dishesPrepTime" prefWidth="105.0" text="Preparation time" />
+                        <TableColumn fx:id="dishesDescription" prefWidth="192.0" text="Description" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="22.0" layoutY="551.0" mnemonicParsing="false" onAction="#insertButton" prefHeight="25.0" prefWidth="101.0" styleClass="button-inside-menu" text="Insert order" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
